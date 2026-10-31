@@ -97,6 +97,13 @@
   .row .d{flex:1;border-bottom:1px dotted rgba(255,255,255,.14);transform:translateY(-4px)}
   .row .p{font-weight:700;white-space:nowrap;color:#fff}
   .note{color:var(--muted);font-size:12.5px;margin-top:16px}
+  a.pcard-link{display:block;color:inherit;text-decoration:none;border-color:rgba(255,155,94,.4);transition:border-color .18s,transform .18s}
+  a.pcard-link:hover{border-color:#ff9b5e;transform:translateY(-2px)}
+  .pcard h3{flex-wrap:wrap}
+  .badge{font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;color:#ff9b5e;border:1px solid rgba(255,155,94,.45);border-radius:999px;padding:3px 8px;white-space:nowrap;margin-left:auto}
+  .pcard-cta{margin-top:18px;padding:12px 14px;border:1px solid rgba(255,155,94,.45);border-radius:10px;color:#ff9b5e;font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:space-between;gap:10px}
+  .pcard{display:flex;flex-direction:column}
+  .pcard .note,.pcard-cta{margin-top:auto}
 
   .why{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
   @media(max-width:900px){.why{grid-template-columns:1fr 1fr}}
@@ -223,8 +230,8 @@
           <div class="note">Если ремонт после диагностики не нужен — берём только за осмотр и так и говорим.</div>
         </div>
 
-        <div class="pcard">
-          <h3>Ремонт ходовой и тормозов</h3>
+        <a class="pcard pcard-link" href="remont-hodovoy.html">
+          <h3>Ремонт ходовой и тормозов <span class="badge">пример страницы услуги</span></h3>
           <div class="sub">Стук, гул, увод в сторону, скрип при торможении</div>
           <div class="row"><span class="n">Замена амортизатора (1 шт.)</span><span class="d"></span><span class="p">от 1 500 ₽</span></div>
           <div class="row"><span class="n">Замена пружины</span><span class="d"></span><span class="p">от 1 200 ₽</span></div>
@@ -233,8 +240,8 @@
           <div class="row"><span class="n">Колодки, ось</span><span class="d"></span><span class="p">от 1 200 ₽</span></div>
           <div class="row"><span class="n">Тормозные диски, ось</span><span class="d"></span><span class="p">от 1 500 ₽</span></div>
           <div class="row"><span class="n">Развал-схождение (3D)</span><span class="d"></span><span class="p">1 600 ₽</span></div>
-          <div class="note"><a href="remont-hodovoy.html" style="color:#ff9b5e">Ремонт ходовой: симптомы, причины и гарантия →</a></div>
-        </div>
+          <div class="pcard-cta">Симптомы, причины, гарантия — подробно о ходовой <span aria-hidden="true">→</span></div>
+        </a>
 
         <div class="pcard">
           <h3>ТО и замена масла</h3>
@@ -390,7 +397,7 @@
     <div>© 2026 Точка опоры — автосервис, Сыктывкар</div>
     <div>улица Коммунистическая 44 · +7 (900) 000-00-00</div>
   </div>
-<div style="max-width:1120px;margin:0 auto;padding:0 18px 26px;color:#98a2ae;font-size:12.5px;line-height:1.5">Демо-версия страницы. Цены примерные, не являются офертой; телефон — заглушка.</div>
+<div style="max-width:1120px;margin:0 auto;padding:0 18px 26px;color:#98a2ae;font-size:12.5px;line-height:1.5">Демо-версия страницы. Цены примерные, не являются офертой; телефон — заглушка.<br>Пример страницы отдельной услуги — карточка «Ремонт ходовой и тормозов».</div>
 </footer>
 
 <div class="bar">
